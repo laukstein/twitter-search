@@ -1,0 +1,169 @@
+/* Standards
+-------------------------------------------------- */
+html, body {
+    height: 100%;
+}
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 62.5%;
+    cursor: default;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+body  {
+    color: #222;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+body, h1, h2, h3, h4, ul, ol, dl, dd, blockquote, figure {
+    margin: auto;
+}
+h1, h2 {
+    font-weight: normal;
+    font-family: Segoe UI, sans-serif;
+}
+h1 {
+    font-size: 27px;
+    font-size: 2.7rem;
+}
+h2 {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+p {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+ul, ol {
+    padding: 0;
+    list-style: none inside;
+}
+a, img {
+    -webkit-user-drag: none;
+       -moz-user-drag: none;
+            user-drag: none;
+}
+a {
+    color: #2d76b9;
+    text-decoration: none;
+    pointer-events: auto;
+}
+a:hover, a:focus {
+    color: #2f6291;
+}
+img {
+    border: 0;
+}
+
+
+
+/* Common rules
+-------------------------------------------------- */
+.absolute, .fixed {
+    z-index: 200;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.nowrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.transition {
+    -webkit-transition-duration: .14s;
+            transition-duration: .14s;
+}
+.transition:hover {
+    -webkit-transition-duration: .1s;
+            transition-duration: .1s;
+}
+.cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* Classification
+-------------------------------------------------- */
+.name {
+    color: #2d76b9;
+}
+.user {
+    color: #ccc;
+    margin: auto .5rem;
+}
+.item {
+    overflow: hidden;
+    position: relative;
+    padding: .5rem 10%;
+    border-bottom: 1px solid #ddd;
+}
+.item:hover, .content:hover {
+    background-color: #eee;
+}
+.image {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    margin: auto 1rem;
+    float: left;
+}
+.target {
+    display: none;
+    z-index: 201;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+}
+.target:target {
+    display: block;
+}
+.content {
+    display: inline-block;
+    position: relative;
+    min-width: 35rem;
+    padding: 2rem;
+    margin-top: 8rem;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem;
+}
+.close {
+    position: absolute;
+    top: .1rem;
+    right: .1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.1;
+}
+
+
+
+/* Media Queries
+-------------------------------------------------- */
+/* CSS Device Adaptation http://dev.w3.org/csswg/css-device-adapt/ */
+@viewport {
+    width: device-width;
+    user-zoom: fixed;
+}

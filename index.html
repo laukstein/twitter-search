@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<title>Twitter Search plugin</title>
+<meta name=description content="">
+<meta name=referrer content=never>
+<link rel=dns-prefetch href=http://code.jquery.com>
+<link rel=stylesheet href=assets/style.css>
+</head>
+<body>
+<ul class=tweets></ul>
+<script src=http://code.jquery.com/jquery-1.8.3.min.js></script>
+<script src=assets/plugin.js></script>
+<script async>
+$('.tweets').search({
+    query: '#html5',
+    count: 20
+});
+</script>
+</body>
+</html>
